@@ -281,11 +281,13 @@ class _RegisterPageState extends State<RegisterPage> {
                                   },
                               },
                               style: ElevatedButton.styleFrom(
-                                  primary: Color.fromARGB(255, 153, 195, 59),
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10)),
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 40, vertical: 15)),
+  backgroundColor: Color.fromARGB(255, 153, 195, 59), // Use 'backgroundColor' instead of 'primary'
+  shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(10),
+  ),
+  padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+)
+,
                               child: const Text(
                                 "Đăng ký",
                                 style: TextStyle(
